@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.challengeandroid.ui.Login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <argument
+            android:name="Login"
+            app:argType="string"/>
+        <action
+            android:id="@+id/action_loginFragment_to_listeDepotsFragment"
+            app:destination="@id/listeDepotsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listeDepotsFragment"
+        android:name="com.example.challengeandroid.ui.ListeDepots.ListeDepotsFragment"
+        android:label="fragment_liste_depots"
+        tools:layout="@layout/fragment_liste_depots" >
+        <argument
+            android:name="repoName"
+            app:argType="string"/>
+        <argument
+            android:name="userName"
+            app:argType="string"/>
+        <action
+            android:id="@+id/action_listeDepotsFragment_to_detaisDepotFragment"
+            app:destination="@id/detaisDepotFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detaisDepotFragment"
+        android:name="com.example.challengeandroid.ui.DetaisDepot.DetaisDepotFragment"
+        android:label="fragment_detais_depot"
+        tools:layout="@layout/fragment_detais_depot" />
+</navigation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search">Search</string>
+    <string name="username">Username:</string>
+    <string name="full_name">Full Name:</string>
+    <string name="name">Name:</string>
+    <string name="id">ID:</string>
+    <string name="description">Description:</string>
+    <string name="git_url">Git URL:</string>
+    <string name="ssh_url">SSH URL:</string>
+    <string name="svn_url">SVN URL</string>
+    <string name="language">language:</string>
+    <string name="visibility">visibility:</string>
+    <string name="watchers_count">Watchers count</string>
+    <string name="forks_count">Forks Count</string>
+    <string name="size">Size:</string>
+    <string name="default_branche">Default Branche:</string>
+</resources>
